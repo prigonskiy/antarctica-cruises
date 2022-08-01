@@ -1,0 +1,23 @@
+.promo {
+  background-color: $color-tangaroa;
+}
+
+.promo__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  color: $color-alice-blue;
+  text-shadow: 0 4px 4px $color-trans-25;
+}
+
+.promo__text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-alice-blue;
+  text-shadow: 0 4px 4px $color-trans-25;
+}
