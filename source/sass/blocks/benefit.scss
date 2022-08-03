@@ -1,0 +1,75 @@
+.benefit {
+  position: relative;
+  box-sizing: border-box;
+  background-color: $color-alice-blue;
+  padding: 30px;
+  padding-top: 87px;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding-top: 76px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.benefit__icon {
+  position: absolute;
+  left: 30px;
+
+  &--liner {
+    top: 30px;
+  }
+
+  &--all-included {
+    top: 35px;
+  }
+
+  &--zodiac {
+    top: 38px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    left: 25px;
+
+    &--liner {
+      top: 25px;
+    }
+
+    &--all-included {
+      top: 29px;
+    }
+
+    &--zodiac {
+      top: 32px;
+    }
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    left: 20px;
+  }
+}
+
+.benefit__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: $color-tangaroa;
+}
+
+.benefit__text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: $color-tangaroa;
+}
