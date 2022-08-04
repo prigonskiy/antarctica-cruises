@@ -1,0 +1,31 @@
+.social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  max-width: 200px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-breakpoint) {
+    max-width: 150px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    max-width: auto;
+    justify-content: flex-start;
+    flex-basis: 100%;
+  }
+}
+
+.social__item {
+  &:not(:nth-last-child(1)) {
+    margin-right: 28px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    &:not(:nth-last-child(1)) {
+      margin-right: 23px;
+    }
+  }
+}

@@ -1,14 +1,20 @@
 .menu__list {
   display: flex;
-  justify-content: flex-end;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 700px;
+
+
+  &--header {
+    justify-content: flex-end;
+    width: 700px;
+  }
 
   @media (max-width: $tablet-breakpoint) {
-    width: 550px;
+    &--header {
+      width: 550px;
+    }
   }
 
   @media (max-width: $mobile-breakpoint) {

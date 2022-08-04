@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
 
+  &--footer {
+    justify-content: flex-start;
+  }
+
   @media (max-width: $mobile-breakpoint) {
     flex-wrap: wrap;
   }
@@ -27,11 +31,7 @@
   @media (max-width: $mobile-breakpoint) {
     width: 42px;
     height: 22px;
-  }
-}
 
-.logo-menu__logo-image {
-  @media (max-width: $mobile-breakpoint) {
     &--is-opened path {
       fill: $color-tangaroa;
     }

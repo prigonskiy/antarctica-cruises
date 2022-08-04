@@ -1,28 +1,92 @@
 .cruise {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
   width: 260px;
-  background-color: $color-tangaroa;
+  min-height: 386px;
+  box-sizing: border-box;
+  padding-top: 35px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  background: $gradient-tangaroa;
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 309px;
+    padding: 35px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 270px;
+    padding: 35px 25px;
+  }
+
+  &:hover {
+    justify-content: space-between;
+    background: $color-tangaroa;
+
+    ::after {
+      z-index: -1;
+    }
+
+    .cruise__name {
+      order: 1;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .cruise__image {
+      z-index: -1;
+    }
+
+    .cruise__information-list {
+      z-index: 1;
+      order: 2;
+    }
+
+    .cruise__book {
+      z-index: 1;
+      order: 3;
+    }
+  }
 }
 
 .cruise__name {
   margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  order: 3;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 16px;
   color: $color-alice-blue;
+  z-index: 3;
 }
 
 .cruise__information-list {
+  margin-top: 24px;
   list-style: none;
   padding: 0;
+  z-index: -1;
+  flex-grow: 1;
+}
+
+.cruise__information-item {
+  &:not(:nth-last-child(1)) {
+    margin-bottom: 16px;
+  }
 }
 
 .cruise-info__title {
   margin: 0;
+  margin-bottom: 5px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 11px;
   color: $color-alice-blue;
 }
 
@@ -31,6 +95,35 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 20px;
   color: $color-quartz;
+}
+
+.cruise__image {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.cruise__book {
+  z-index: -2;
+  width: 100%;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 11px;
+  color: $color-tangaroa;
+  background-color: $color-alice-blue;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-bottom: 5px;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin: 0;
+  }
 }

@@ -27,28 +27,10 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 30px;
   max-width: 1130px;
 
   @media (max-width: $tablet-breakpoint) {
     max-width: 648px;
-  }
-}
-
-.cruises__item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
-
-  @media (max-width: $tablet-breakpoint) {
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-  }
-
-  @media (max-width: $mobile-breakpoint) {
-    margin-right: 0;
   }
 }
