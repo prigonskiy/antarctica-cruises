@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <div class="container">
-        <div class="page-header__logo-menu logo-menu logo-menu--header logo-menu--js-is-closed">
+    <header class="page-header page-header--js">
+      <div class="page-header__container container">
+        <div class="page-header__logo-menu logo-menu logo-menu--header logo-menu--js">
           <a class="logo-menu__logo">
             <svg class="logo-menu__logo-image" width="70" height="38" viewBox="0 0 70 38" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z" fill="#F9FBFD"/>
@@ -27,7 +27,7 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z" fill="#F9FBFD"/>
             </svg>
           </a>
-          <button class="logo-menu__menu-toggle logo-menu__menu-toggle--opened" type="button">
+          <button class="logo-menu__menu-toggle logo-menu__menu-toggle--is-closed" type="button">
             <svg class="logo-menu__menu-toggle-icon logo-menu__menu-toggle-icon--open" width="24" height="14" viewBox="0 0 24 14" fill="none">
               <path d="M0 1H24M0 7H24M0 13H24" stroke="#F9FBFD" stroke-width="2"/>
             </svg>
@@ -56,8 +56,10 @@
     </header>
     <main>
       <section class="promo">
-        <h1 class="promo__title">Круизы в Антарктику</h1>
-        <p class="promo__text">Волшебный мир айсбергов и пингвинов</p>
+        <div class="promo__container container">
+          <h1 class="promo__title">Круизы<br> в Антарктику</h1>
+          <p class="promo__text">Волшебный мир<br> айсбергов и пингвинов</p>
+        </div>
       </section>
       <section class="container trip">
         <div class="trip__title-text">
@@ -415,29 +417,31 @@
         </ul>
       </section>
       <section class="book">
-        <div class="book__title-text">
-          <h2 class="book__title">Раннее бронирование</h2>
-          <p class="book__text">Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
-        </div>
-        <form class="book__form book-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="book-form__text">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
-          <ul class="book-form__text-inputs-list">
-            <li class="book-form__text-inputs-item">
-              <input class="book-form__text-input" type="text" name="Name" placeholder="Имя" required>
-            </li>
-            <li class="book-form__text-inputs-item">
-              <input class="book-form__text-input" type="tel" name="Phone" placeholder="Телефон" required>
-            </li>
-            <li class="book-form__text-inputs-item">
-              <input class="book-form__text-input" type="email" name="Mail" placeholder="Email" required>
-            </li>
-          </ul>
-          <div class="book-form__checkbox-input-container">
-            <input class="visually-hidden book-form__checkbox-input" type="checkbox" name="personal-data-consent" id="personal-data-consent" required checked>
-            <label class="book-form__label" for="personal-data-consent">Я согласен на обработку персональных данных</label>
+        <div class="book__container container">
+          <div class="book__title-text">
+            <h2 class="book__title">Раннее бронирование</h2>
+            <p class="book__text">Забронируйте тур за 3-6 месяцев <br>до даты выезда и сэкономьте до 50%</p>
           </div>
-          <button class="boot-form__submit" type="submit">Оставить заявку</button>
-        </form>
+          <form class="book__form book-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="book-form__text">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+            <ul class="book-form__text-inputs-list">
+              <li class="book-form__text-inputs-item">
+                <input class="book-form__text-input" type="text" name="Name" placeholder="Имя" required>
+              </li>
+              <li class="book-form__text-inputs-item">
+                <input class="book-form__text-input" type="tel" name="Phone" placeholder="Телефон" required>
+              </li>
+              <li class="book-form__text-inputs-item">
+                <input class="book-form__text-input" type="email" name="Mail" placeholder="Email" required>
+              </li>
+            </ul>
+            <div class="book-form__checkbox-input-container">
+              <input class="visually-hidden book-form__checkbox-input" type="checkbox" name="personal-data-consent" id="personal-data-consent" required checked>
+              <label class="book-form__label" for="personal-data-consent">Я согласен на обработку персональных данных</label>
+            </div>
+            <button class="boot-form__submit" type="submit">Оставить заявку</button>
+          </form>
+        </div>
       </section>
       <section class="contacts container" id="contacts">
         <h2 class="visually-hidden">Контакты</h2>
@@ -474,16 +478,16 @@
           <div class="logo-menu__menu logo-menu__menu--footer">
             <ul class="menu__list menu__list--footer">
               <li class="menu__item">
-                <a class="menu__link" href="#">Преимущества</a>
+                <a class="menu__link" href="#benefits">Преимущества</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#">Направления</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Ближайшие круизы</a>
+                <a class="menu__link" href="#cruises">Ближайшие круизы</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Контакты</a>
+                <a class="menu__link" href="#contacts">Контакты</a>
               </li>
             </ul>
           </div>

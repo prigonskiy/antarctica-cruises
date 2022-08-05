@@ -5,7 +5,7 @@
   top: 35px;
 
   @media (max-width: $tablet-breakpoint) {
-    top: 30px;
+    top: 28px;
   }
 
   @media (max-width: $mobile-breakpoint) {
@@ -14,25 +14,23 @@
     box-sizing: border-box;
     padding-top: 20px;
     padding-bottom: 20px;
-  }
 
-  &--js-is-closed {
-    @media (max-width: $mobile-breakpoint) {
-      background-color: $color-transparent;
+    &--js {
       position: absolute;
-      width: 100%;
+      background-color: $color-transparent;
       top: 20px;
+      padding-top: 0;
+      padding-bottom: 0;
     }
-  }
 
-  &--js-is-opened {
-    @media (max-width: $mobile-breakpoint) {
+    &--is-opened {
+      padding-top: 20px;
       position: fixed;
-      margin: 0;
-      width: 285px;
-      height: 100%;
       top: 0;
+      bottom: 0;
       right: 0;
+      width: 285px;
+      background-color: $color-alice-blue;
       z-index: 5;
     }
   }
