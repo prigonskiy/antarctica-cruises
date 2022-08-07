@@ -59,6 +59,7 @@ const sprite = () => {
       .pipe(gulp.dest('build/img'));
 };
 
+
 const copySvg = () => {
   return gulp.src('source/img/**/*.svg', {base: 'source'})
       .pipe(gulp.dest('build'));

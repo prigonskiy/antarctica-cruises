@@ -38,7 +38,7 @@
       margin-right: 0;
     }
 
-    .cruise__image {
+    img {
       z-index: -1;
     }
 
@@ -79,28 +79,28 @@
   &:not(:nth-last-child(1)) {
     margin-bottom: 16px;
   }
+
+  & h4 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 11px;
+    color: $color-alice-blue;
+  }
+
+  & p {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-quartz;
+  }
 }
 
-.cruise__information-title {
-  margin: 0;
-  margin-bottom: 5px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 11px;
-  color: $color-alice-blue;
-}
-
-.cruise__information-text {
-  margin: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: $color-quartz;
-}
-
-.cruise__image {
+.cruise img {
   position: absolute;
   display: block;
   top: 0;

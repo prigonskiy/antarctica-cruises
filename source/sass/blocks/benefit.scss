@@ -6,6 +6,15 @@
   padding-top: 82px;
   padding-bottom: 25px;
 
+  & p {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-tangaroa;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     padding-top: 71px;
     padding-bottom: 25px;
@@ -72,14 +81,5 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 140%;
-  color: $color-tangaroa;
-}
-
-.benefit__text {
-  margin: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
   color: $color-tangaroa;
 }

@@ -20,6 +20,15 @@
 .trip__title-text {
   margin-right: 88px;
 
+  & p {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-tangaroa;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     margin-right: 30px;
   }
@@ -37,15 +46,6 @@
   @media (max-width: $tablet-breakpoint) {
     margin-bottom: 30px;
   }
-}
-
-.trip__text {
-  margin: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: $color-tangaroa;
 }
 
 .trip__image-container {
