@@ -1,6 +1,7 @@
 .book-form {
   background-color: $color-tangaroa;
   padding: 50px;
+  padding-top: 43px;
   box-shadow: $shadow-book-form;
 
   @media (max-width: $mobile-breakpoint) {
@@ -10,11 +11,11 @@
 
 .book-form__text {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   color: $color-alice-blue;
   font-weight: 500;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 27px;
 
   @media (max-width: $mobile-breakpoint) {
     text-align: center;
@@ -25,10 +26,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 17px;
 }
 
 .book-form__text-inputs-item {
-  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .book-form__text-input {
@@ -84,11 +88,11 @@
   }
 }
 
-.boot-form__submit {
+.book-form__submit {
   cursor: pointer;
   display: block;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 27px;
   color: $color-tangaroa;
   background-color: $color-alice-blue;
   border: none;
@@ -96,6 +100,14 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+
+  &:hover {
+    color: $color-tangaroa-trans-70;
+  }
+
+  &:active {
+    color: $color-tangaroa-trans-15;
+  }
 }

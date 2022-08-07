@@ -8,5 +8,25 @@
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  flex-wrap: wrap;
+
+  @media (max-width: $mobile-breakpoint) {
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.page-footer__social {
+  margin: 0;
+  padding: 0;
+  max-width: 108px;
+
+  @media (max-width: $tablet-breakpoint) {
+    max-width: 90px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    max-width: none;
+    margin-top: 27px;
+  }
 }

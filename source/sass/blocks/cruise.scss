@@ -10,7 +10,7 @@
   padding-top: 35px;
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   background: $gradient-tangaroa;
 
   @media (max-width: $tablet-breakpoint) {
@@ -23,7 +23,8 @@
     padding: 35px 25px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     justify-content: space-between;
     background: $color-tangaroa;
 
@@ -80,7 +81,7 @@
   }
 }
 
-.cruise-info__title {
+.cruise__information-title {
   margin: 0;
   margin-bottom: 5px;
   font-style: normal;
@@ -90,7 +91,7 @@
   color: $color-alice-blue;
 }
 
-.cruise-info__text {
+.cruise__information-text {
   margin: 0;
   font-style: normal;
   font-weight: 400;
@@ -122,6 +123,14 @@
   padding-top: 14px;
   padding-bottom: 14px;
   margin-bottom: 5px;
+
+  &:hover {
+    color: $color-tangaroa-trans-70;
+  }
+
+  &:active {
+    color: $color-tangaroa-trans-15;
+  }
 
   @media (max-width: $tablet-breakpoint) {
     margin: 0;

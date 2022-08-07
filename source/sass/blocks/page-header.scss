@@ -2,36 +2,39 @@
   background-color: $color-transparent;
   position: absolute;
   width: 100%;
-  top: 35px;
-
-  @media (max-width: $tablet-breakpoint) {
-    top: 28px;
-  }
+  top: 0;
 
   @media (max-width: $mobile-breakpoint) {
     background-color: $color-alice-blue;
     position: static;
-    box-sizing: border-box;
-    padding-top: 20px;
-    padding-bottom: 20px;
 
     &--js {
       position: absolute;
       background-color: $color-transparent;
-      top: 20px;
-      padding-top: 0;
-      padding-bottom: 0;
     }
 
     &--is-opened {
-      padding-top: 20px;
       position: fixed;
-      top: 0;
       bottom: 0;
       right: 0;
       width: 285px;
       background-color: $color-alice-blue;
       z-index: 5;
     }
+  }
+}
+
+.page-header__container {
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }

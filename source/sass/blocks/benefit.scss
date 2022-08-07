@@ -3,13 +3,14 @@
   box-sizing: border-box;
   background-color: $color-alice-blue;
   padding: 30px;
-  padding-top: 87px;
+  padding-top: 82px;
+  padding-bottom: 25px;
 
   @media (max-width: $tablet-breakpoint) {
-    padding-top: 76px;
+    padding-top: 71px;
     padding-bottom: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 15px;
   }
 
   @media (max-width: $mobile-breakpoint) {
@@ -20,44 +21,53 @@
 
 .benefit__icon {
   position: absolute;
+  display: block;
   left: 30px;
 
   &--liner {
     top: 30px;
+    width: 27px;
+    height: 32px;
   }
 
   &--all-included {
     top: 35px;
+    width: 38px;
+    height: 21px;
   }
 
   &--zodiac {
     top: 38px;
+    width: 42px;
+    height: 15px;
   }
 
   @media (max-width: $tablet-breakpoint) {
-    left: 25px;
+    left: 20px;
 
     &--liner {
       top: 25px;
+      width: 21px;
+      height: 26px;
     }
 
     &--all-included {
       top: 29px;
+      width: 33px;
+      height: 19px;
     }
 
     &--zodiac {
       top: 32px;
+      width: 38px;
+      height: 13px;
     }
-  }
-
-  @media (max-width: $mobile-breakpoint) {
-    left: 20px;
   }
 }
 
 .benefit__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -70,6 +80,6 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 20px;
   color: $color-tangaroa;
 }
