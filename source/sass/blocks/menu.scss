@@ -1,6 +1,5 @@
-.menu__list {
+.menu {
   list-style: none;
-  margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
@@ -82,7 +81,7 @@
         font-size: 18px;
         line-height: 22px;
         color: $color-tangaroa;
-        padding: 8px 10px;
+        padding: 9px 10px;
         width: 100%;
       }
     }
