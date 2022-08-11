@@ -4,7 +4,6 @@
   background-color: $color-alice-blue;
   padding: 30px;
   padding-top: 82px;
-  padding-bottom: 25px;
 
   & p {
     margin: 0;
@@ -18,11 +17,6 @@
   @media (max-width: $tablet-breakpoint) {
     padding-top: 71px;
     padding-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 15px;
-  }
-
-  @media (max-width: $mobile-breakpoint) {
     padding-left: 20px;
     padding-right: 20px;
   }
