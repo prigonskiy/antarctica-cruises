@@ -34,21 +34,29 @@
       background-image: url("../../img/background/benefits/benefits-mobile.jpg");
     }
   }
-}
 
-.benefits__title {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 49px;
+  & h2 {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 49px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+    color: $color-tangaroa;
 
-  @media (max-width: $tablet-breakpoint) {
-    margin-bottom: 51px;
-  }
+    @media (max-width: $tablet-breakpoint) {
+      margin-bottom: 51px;
+      font-size: 26px;
+      line-height: 140%;
+    }
 
-  @media (max-width: $mobile-breakpoint) {
-    margin-bottom: 40px;
+    @media (max-width: $mobile-breakpoint) {
+      margin-bottom: 40px;
+      font-size: 24px;
+    }
   }
 }
 

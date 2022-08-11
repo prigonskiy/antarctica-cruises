@@ -20,6 +20,36 @@
 .trip__title-text {
   margin-right: 88px;
 
+  @media (max-width: $tablet-breakpoint) {
+    margin-right: 30px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  & h2 {
+    margin: 0;
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+    color: $color-tangaroa;
+
+
+    @media (max-width: $tablet-breakpoint) {
+      margin-bottom: 30px;
+      font-size: 26px;
+      line-height: 140%;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      font-size: 24px;
+    }
+  }
+
   & p {
     margin: 0;
     font-style: normal;
@@ -29,23 +59,6 @@
     color: $color-tangaroa;
   }
 
-  @media (max-width: $tablet-breakpoint) {
-    margin-right: 30px;
-  }
-
-  @media (max-width: $mobile-breakpoint) {
-    margin-right: 0;
-    margin-bottom: 40px;
-  }
-}
-
-.trip__title {
-  margin: 0;
-  margin-bottom: 40px;
-
-  @media (max-width: $tablet-breakpoint) {
-    margin-bottom: 30px;
-  }
 }
 
 .trip__image-container {

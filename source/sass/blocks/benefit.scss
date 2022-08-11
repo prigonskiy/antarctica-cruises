@@ -5,6 +5,23 @@
   padding: 30px;
   padding-top: 82px;
 
+  @media (max-width: $tablet-breakpoint) {
+    padding-top: 71px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  & h3 {
+    margin: 0;
+    margin-bottom: 9px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: $color-tangaroa;
+  }
+
   & p {
     margin: 0;
     font-style: normal;
@@ -12,13 +29,6 @@
     font-size: 14px;
     line-height: 20px;
     color: $color-tangaroa;
-  }
-
-  @media (max-width: $tablet-breakpoint) {
-    padding-top: 71px;
-    padding-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -66,14 +76,4 @@
       height: 13px;
     }
   }
-}
-
-.benefit__title {
-  margin: 0;
-  margin-bottom: 9px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 140%;
-  color: $color-tangaroa;
 }

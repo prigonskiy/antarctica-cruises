@@ -50,6 +50,24 @@
 .book__title-text {
   margin-right: 20px;
 
+  @media (max-width: $tablet-breakpoint) {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  & h2 {
+    margin: 0;
+    color: $color-tangaroa;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+
+    @media (max-width: $tablet-breakpoint) {
+      font-size: 34px;
+      line-height: 34px;
+    }
+  }
+
   & p {
     margin: 0;
     margin-top: 18px;
@@ -57,13 +75,8 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-  }
 
-  @media (max-width: $tablet-breakpoint) {
-    margin: 0 auto;
-    text-align: center;
-
-    & p {
+    @media (max-width: $tablet-breakpoint) {
       max-width: 352px;
       margin: 0 auto;
       margin-top: 14px;
@@ -73,16 +86,7 @@
 }
 
 .book__title {
-  margin: 0;
-  color: $color-tangaroa;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 40px;
 
-  @media (max-width: $tablet-breakpoint) {
-    font-size: 34px;
-    line-height: 34px;
-  }
 }
 
 .book__form {

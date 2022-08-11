@@ -52,19 +52,19 @@
       order: 3;
     }
   }
-}
 
-.cruise__name {
-  margin: 0;
-  margin-left: 5px;
-  margin-right: 5px;
-  order: 3;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 16px;
-  color: $color-alice-blue;
-  z-index: 3;
+  & h3 {
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    order: 3;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+    color: $color-alice-blue;
+    z-index: 3;
+  }
 }
 
 .cruise__information-list {
