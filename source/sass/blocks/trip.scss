@@ -18,10 +18,10 @@
 }
 
 .trip__title-text {
-  margin-right: 88px;
+  margin-right: 20px;
 
   @media (max-width: $tablet-breakpoint) {
-    margin-right: 30px;
+    margin-right: 10px;
   }
 
   @media (max-width: $mobile-breakpoint) {
@@ -64,7 +64,28 @@
 .trip__image-container {
   flex-shrink: 0;
 
+  & img {
+    vertical-align: middle;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 324px;
+    height: 264px;
+
+    & img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
   @media (max-width: $mobile-breakpoint) {
     align-self: center;
+    width: 100%;
+    height: auto;
+
+    & img {
+      object-fit: cover;
+    }
   }
 }
