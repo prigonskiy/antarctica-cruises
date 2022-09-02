@@ -739,6 +739,10 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #f9fbfd;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .menu--header .menu__link:hover {
@@ -761,6 +765,10 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #f9fbfd;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .menu--footer .menu__link:hover {
@@ -1132,6 +1140,10 @@ a {
   padding-top: 14px;
   padding-bottom: 14px;
   margin-bottom: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .cruise__book:hover {
@@ -1267,6 +1279,18 @@ a {
   line-height: 21px;
 }
 
+.book-form__text-inputs-item input:hover {
+  border: 2px solid rgba(1, 28, 64, 0.15);
+  padding: 9px 14px;
+}
+
+.book-form__text-inputs-item input:active,
+.book-form__text-inputs-item input:focus {
+  outline: none;
+  border: 2px solid rgba(1, 28, 64, 0.7);
+  padding: 9px 14px;
+}
+
 .book-form__checkbox-input-container label {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -1277,6 +1301,7 @@ a {
   font-weight: 400;
   font-size: 10px;
   line-height: 18px;
+  cursor: pointer;
 }
 
 .book-form__checkbox-input-container label::before {
@@ -1287,6 +1312,32 @@ a {
   width: 18px;
   height: 18px;
   background-color: #f9fbfd;
+}
+
+.book-form__checkbox-input-container label:hover {
+  color: #e3ecf6;
+}
+
+.book-form__checkbox-input-container label:hover::before {
+  background-color: #e3ecf6;
+}
+
+.book-form__checkbox-input-container label:active,
+.book-form__checkbox-input-container label:focus {
+  color: #d8d8d9;
+}
+
+.book-form__checkbox-input-container label:active::before,
+.book-form__checkbox-input-container label:focus::before {
+  background-color: #d8d8d9;
+}
+
+.book-form__checkbox-input-container input:focus + label {
+  color: #d8d8d9;
+}
+
+.book-form__checkbox-input-container input:focus + label::before {
+  background-color: #d8d8d9;
 }
 
 .book-form__checkbox-input-container input:checked + label::after {

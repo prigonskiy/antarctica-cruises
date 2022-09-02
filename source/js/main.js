@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {addJavaScriptClasses, listenMenuToggle} from './modules/mobile-menu';
+import {getLocalStorage} from './modules/local-storage';
 
 // ---------------------------------
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
   addJavaScriptClasses();
   listenMenuToggle();
+  getLocalStorage();
 });
 
 // ---------------------------------
