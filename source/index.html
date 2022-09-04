@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="fonts/montserrat-v25-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v25-latin_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v25-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v25-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-v25-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-v25-latin_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-v25-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-v25-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <meta name="description" content="Круизы в Антарктику: волшебный мир айсбергов и пингвинов">
     <title>Круизы в Антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -48,7 +48,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="page-main">
       <section class="promo">
         <div class="promo__container container">
           <h1 class="promo__title">Круизы<br> в&nbsp;Антарктику</h1>
@@ -63,7 +63,7 @@
         <div class="trip__image-container">
           <picture>
             <!-- 1x: 290px; 2x: 580px-->
-            <source type="image/webp" media="(min-width: 1024px)" srcset="./img/content/trip/trip-desktop.webp 1x, /img/content/trip/trip-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1024px)" srcset="./img/content/trip/trip-desktop.webp 1x, ./img/content/trip/trip-desktop@2x.webp 2x">
             <img src="./img/content/trip/trip-desktop.jpg" width="560" height="301" srcset="./img/content/trip/trip-desktop@2x.jpg 2x" alt="Пингвинчики идут по своим делам. Кругом снег.">
           </picture>
         </div>
@@ -121,7 +121,7 @@
             </ul>
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
-              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/astoria/astoria-desktop.webp 1x, /img/content/cruise/astoria/astoria-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/astoria/astoria-desktop.webp 1x, ./img/content/cruise/astoria/astoria-desktop@2x.webp 2x">
               <img src="./img/content/cruise/astoria/astoria-desktop.jpg" width="260" height="386" srcset="./img/content/cruise/astoria/astoria-desktop@2x.jpg 2x" alt="Круиз Астория. Лёд, снег, какая-то гора, голубое небо.">
             </picture>
             <a class="cruise__book" href="book.html">Забронировать</a>
@@ -148,7 +148,7 @@
             </ul>
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
-              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/elaine/elaine-desktop.webp 1x, /img/content/elaine/elaine-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/elaine/elaine-desktop.webp 1x, ./img/content/elaine/elaine-desktop@2x.webp 2x">
               <img src="./img/content/cruise/elaine/elaine-desktop.jpg" width="260" height="386" srcset="./img/content/cruise/elaine/elaine-desktop@2x.jpg 2x" alt="Круиз Элайн. Снег, горы, люди, пасмурно.">
             </picture>
             <a class="cruise__book" href="book.html">Забронировать</a>
@@ -175,7 +175,7 @@
             </ul>
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
-              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/atlantis/atlantis-desktop.webp 1x, /img/content/cruise/atlantis/atlantis-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/atlantis/atlantis-desktop.webp 1x, ./img/content/cruise/atlantis/atlantis-desktop@2x.webp 2x">
               <img src="./img/content/cruise/atlantis/atlantis-desktop.jpg" width="260" height="386" srcset="./img/content/cruise/atlantis/atlantis-desktop@2x.jpg 2x" alt="Круиз Атлантис. Айсберги, океан.">
             </picture>
             <a class="cruise__book" href="book.html">Забронировать</a>
@@ -202,7 +202,7 @@
             </ul>
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
-              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/odyssey/odyssey-desktop.webp 1x, /img/content/cruise/odyssey/odyssey-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/odyssey/odyssey-desktop.webp 1x, ./img/content/cruise/odyssey/odyssey-desktop@2x.webp 2x">
               <img src="./img/content/cruise/odyssey/odyssey-desktop.jpg" width="260" height="386" srcset="./img/content/cruise/odyssey/odyssey-desktop@2x.jpg 2x" alt="Круиз Одиссей. Облачное небо, вода, айсберги.">
             </picture>
             <a class="cruise__book" href="book.html">Забронировать</a>
@@ -229,7 +229,7 @@
             </ul>
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
-              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/olympia/olympia-desktop.webp 1x, /img/content/cruise/olympia/olympia-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/olympia/olympia-desktop.webp 1x, ./img/content/cruise/olympia/olympia-desktop@2x.webp 2x">
               <img src="./img/content/cruise/olympia/olympia-desktop.jpg" width="260" height="386" srcset="./img/content/cruise/olympia/olympia-desktop@2x.jpg 2x" alt="Круиз Олимпия. Пингвинчики, голубое небо, снег.">
             </picture>
             <a class="cruise__book" href="book.html">Забронировать</a>
@@ -256,7 +256,7 @@
             </ul>
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
-              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/aurora/aurora-desktop.webp 1x, /img/content/cruise/aurora/aurora-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/aurora/aurora-desktop.webp 1x, ./img/content/cruise/aurora/aurora-desktop@2x.webp 2x">
               <img src="./img/content/cruise/aurora/aurora-desktop.jpg" width="260" height="386" srcset="./img/content/cruise/aurora/aurora-desktop@2x.jpg 2x" alt="Круиз Аврора. Лёд, снег, холод.">
             </picture>
             <a class="cruise__book" href="book.html">Забронировать</a>
@@ -283,7 +283,7 @@
             </ul>
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
-              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/leonor/leonor-desktop.webp 1x, /img/content/cruise/leonor/leonor-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/leonor/leonor-desktop.webp 1x, ./img/content/cruise/leonor/leonor-desktop@2x.webp 2x">
               <img src="./img/content/cruise/leonor/leonor-desktop.jpg" width="260" height="386" srcset="./img/content/cruise/leonor/leonor-desktop@2x.jpg 2x" alt="Круиз Леонор. Парусник, океан.">
             </picture>
             <a class="cruise__book" href="book.html">Забронировать</a>
@@ -310,7 +310,7 @@
             </ul>
             <picture>
               <!-- 1x: 260px; 2x: 520px-->
-              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/minion-1/minion-1-desktop.webp 1x, /img/content/cruise/minion-1/minion-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" width="260" height="386" srcset="./img/content/cruise/minion-1/minion-1-desktop.webp 1x, ./img/content/cruise/minion-1/minion-1-desktop@2x.webp 2x">
               <img src="./img/content/cruise//minion-1/minion-1-desktop.jpg" width="260" height="386" srcset="./img/content/cruise//minion-1/minion-1-desktop@2x.jpg 2x" alt="Круиз Минион-1. Снег, горы, люди, пасмурно.">
             </picture>
             <a class="cruise__book" href="book.html">Забронировать</a>

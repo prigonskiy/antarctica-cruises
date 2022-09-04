@@ -17,10 +17,9 @@ a {
   position: relative;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  grid-template-columns: 100%;
-  align-content: start;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   background-color: $color-default-white;
   font-family: $main-font;
   font-size: 16px;

@@ -626,16 +626,14 @@ a {
   position: relative;
   margin: 0;
   padding: 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: -webkit-min-content 1fr -webkit-min-content;
-  -ms-grid-rows: min-content 1fr min-content;
-  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
-  grid-template-rows: min-content 1fr min-content;
-  -ms-grid-columns: 100%;
-  grid-template-columns: 100%;
-  -ms-flex-line-pack: start;
-  align-content: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100%;
   background-color: #ffffff;
   font-family: "Montserrat", arial, sans-serif;
   font-size: 16px;
@@ -649,6 +647,9 @@ a {
   position: absolute;
   width: 100%;
   top: 0;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .page-header__container {
@@ -777,6 +778,12 @@ a {
 
 .menu--footer .menu__link:active {
   color: rgba(1, 28, 64, 0.15);
+}
+
+.page-main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .promo {
@@ -1463,6 +1470,9 @@ a {
 
 .page-footer {
   background-color: #011c40;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .page-footer__container {
@@ -2096,7 +2106,7 @@ a {
   }
 
   .contacts__map {
-    background-image: url("../img/background/contacts/contacts-desktop@2x.jpg");
+    background-image: url("../img/background/contacts/contacts-desktop@2x.png");
     background-size: 560px 306px;
   }
 }
